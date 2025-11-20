@@ -8,9 +8,6 @@ class VegetableList(list):
                 return
         print(f"Овоща {name} нет в списке!")    
                
-            
-
-
 veg = VegetableList()
 
 veg.add_veg("Картошка", 100)

@@ -2,9 +2,9 @@ class Singleton:
     single = None
     
     def __new__(cls):
-        if not cls.instance:
-            cls.instance = object.__new__(cls)
-        return cls.instance
+        if not cls.single:
+            cls.single = object.__new__(cls)
+        return cls.single
 
 a = Singleton()
 b = Singleton()
